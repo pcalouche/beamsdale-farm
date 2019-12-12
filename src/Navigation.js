@@ -1,15 +1,15 @@
 import React, {useState} from 'react';
-import {NavLink as RouterLink, withRouter} from 'react-router-dom';
+import {NavLink as RouterLink, useLocation} from 'react-router-dom';
 import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from 'reactstrap';
 
 import logo from './images/logo.jpg';
 
-const Navigation = props => {
+const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
-  const pathname = props.location.pathname;
+  const pathname = useLocation().pathname;
 
   return (
     <Navbar className="Navigation"
@@ -45,4 +45,4 @@ const Navigation = props => {
   );
 };
 
-export default withRouter(Navigation);
+export default Navigation;
