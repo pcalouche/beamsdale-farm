@@ -1,56 +1,48 @@
 import React, {useState} from 'react';
-import {
-  Collapse,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  Nav,
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown
-} from 'reactstrap';
+import {NavLink as RouterLink, withRouter} from 'react-router-dom';
+import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from 'reactstrap';
 
-const Navbar = props => {
+import logo from './images/logo.jpg';
+
+const Navigation = props => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
+  const pathname = props.location.pathname;
+
   return (
-    <Navbar color="light" light expand="md">
-      <NavbarBrand href="/">reactstrap</NavbarBrand>
+    <Navbar className="Navigation"
+            color="dark"
+            dark
+            expand="md"
+            fixed="top">
+      <NavbarBrand href="/"><img src={logo} alt={'logo'}/></NavbarBrand>
       <NavbarToggler onClick={toggle}/>
       <Collapse isOpen={isOpen} navbar>
-        <Nav className="ml-auto" navbar>
+        <Nav navbar>
           <NavItem>
-            <NavLink href="/components/">Components</NavLink>
+            <NavLink tag={RouterLink} to={'/'} exact active={pathname === '/'}>Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            <NavLink tag={RouterLink} to={'/about-us'} active={pathname === '/about-us'}>About Us</NavLink>
           </NavItem>
-          <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret>
-              Options
-            </DropdownToggle>
-            <DropdownMenu right>
-              <DropdownItem>
-                Option 1
-              </DropdownItem>
-              <DropdownItem>
-                Option 2
-              </DropdownItem>
-              <DropdownItem divider/>
-              <DropdownItem>
-                Reset
-              </DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown>
+          <NavItem>
+            <NavLink tag={RouterLink} to={'/menu'} active={pathname === '/menu'}>Menu</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={RouterLink} to={'/products'} active={pathname === '/products'}>Products</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={RouterLink} to={'/pictures'} active={pathname === '/pictures'}>Pictures</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={RouterLink} to={'/contact'} active={pathname === '/contact'}>Contact Us</NavLink>
+          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>
   );
 };
 
-export default Navbar;
+export default withRouter(Navigation);

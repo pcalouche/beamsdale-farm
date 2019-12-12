@@ -1,10 +1,13 @@
 import React from 'react';
+import {CardBody, Container} from 'reactstrap';
 
-const Pictures = props => {
+const Pictures = () => {
   return (
-    <div className="Pictures">
-      About
-    </div>
+    <Container className="Pictures">
+      <CardBody>
+        <h2 className="text-center">Pictures</h2>
+      </CardBody>
+    </Container>
   );
 };
 

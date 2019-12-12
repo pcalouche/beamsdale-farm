@@ -1,12 +1,14 @@
 import React from 'react';
-import {Container} from 'reactstrap';
+import {CardBody, Container} from 'reactstrap';
 
-const Pictures = props => {
+const Products = () => {
   return (
-    <Container fluid className="Pictures">
-      Pictures
+    <Container className="Products">
+      <CardBody>
+        <h2 className="text-center">Products</h2>
+      </CardBody>
     </Container>
   );
 };
 
-export default Pictures;
+export default Products;
