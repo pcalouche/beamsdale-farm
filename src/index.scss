@@ -1,9 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 
-//@import "~bootswatch/dist/cyborg/variables";
-//@import "~bootstrap/scss/bootstrap";
-//@import "~bootswatch/dist/cyborg/bootswatch";
-
 #root {
   display: flex;
   flex-direction: column;
@@ -14,11 +10,6 @@
     flex-grow: 1;
     padding: 20px 0 20px 0;
   }
-}
-
-body {
-  //background-image: url("http://www.hodgesfarmnc.com/wp-content/uploads/2014/09/wood2.jpg");
-  //background-color: grey;
 }
 
 .Navigation {
@@ -41,5 +32,16 @@ body {
 
   .menu-price {
     font-weight: bold;
+  }
+}
+
+.Pictures {
+  div.carousel.slide {
+    //width: 50%;
+
+    //img {
+    //  width: 50% !important;
+    //  height: 50% !important;
+    //}
   }
 }

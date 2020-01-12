@@ -1,20 +1,29 @@
 import React from 'react';
-import {CardBody, Container} from 'reactstrap';
+import {CardBody, Col, Container, Row} from 'reactstrap';
+
+import {family1} from '../images';
 
 const AboutUs = () => {
   return (
     <Container className="AboutUs">
       <CardBody>
         <h2 className="text-center">About Our Farm</h2>
-        <p className="text-justify">
-          Our farm has been in our family since the early 1800s. My grandfather, David Elliott Beam, established Beamsdale Farm and Hatchery in 1950.
-          About 3 years ago, my family and I decided to build on the farm property and add in chickens. We have cows, chickens, horses, and lots of vegetables.
-          Our chickens get plenty of sunlight and range of the pastures for fresh grass and other nature they like to grub on. Our cows are pasture raised their entire life.
-        </p>
-        <p className="text-justify">
-          Our chickens are fed a high protein diet and plenty of water. Depending on the season, they dine on many types of fruits and vegetables.
-          They love kale, watermelon, cantaloupe, lettuce, spinach, lavender, corn and many other seasonal foods. They aren’t fed anything artificial.
-        </p>
+        <Row>
+          <Col md={6}>
+            <img className="img-fluid rounded" src={family1} alt="Family"/>
+          </Col>
+          <Col md={6}>
+            <p className="text-justify">
+              Our farm has been in our family since the early 1800s. My grandfather, David Elliott Beam, established Beamsdale Farm and Hatchery in 1950.
+              About 3 years ago, my family and I decided to build on the farm property and add in chickens. We have cows, chickens, horses, and lots of vegetables.
+              Our chickens get plenty of sunlight and range of the pastures for fresh grass and other nature they like to grub on. Our cows are pasture raised their entire life.
+            </p>
+            <p className="text-justify">
+              Our chickens are fed a high protein diet and plenty of water. Depending on the season, they dine on many types of fruits and vegetables.
+              They love kale, watermelon, cantaloupe, lettuce, spinach, lavender, corn and many other seasonal foods. They aren’t fed anything artificial.
+            </p>
+          </Col>
+        </Row>
         <h2 className="text-center">About Our Menu</h2>
         <p className="text-justify">
           All foods are made with our farm fresh eggs, fresh garden vegetables, herbs that we grow on the farm.

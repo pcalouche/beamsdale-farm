@@ -16,7 +16,7 @@ const Menu = () => {
           <li>
             <p className="menu-item">Hot Crab Dip</p>
             <p>
-              description?--<span className="menu-price">$10</span>
+              Hot crab dip--<span className="menu-price">$10</span>
             </p>
           </li>
           <li>
@@ -45,109 +45,30 @@ const Menu = () => {
         <p className="text-center">
           All quiches are <span className="menu-price">$10</span>. Add a custom dish for <span className="menu-price">$10</span> extra.
         </p>
-        <ul className="menu-list text-center">
+        <ul>
           <li>
-            <p className="menu-item">
-              Name?
-            </p>
-            <p>
-              Baby Bella Mushrooms with sweet onions, sauteed in avocado oil. Add Basil and/or rosemary for a delicious quiche. Cheese options that are best: swiss, marinated mozzarella, white sharp
-            </p>
+            Baby Bella Mushrooms with sweet onions, sauteed in avocado oil. Add Basil and/or rosemary for a delicious quiche. Cheese options that are best: swiss, marinated mozzarella, white sharp
           </li>
           <li>
-            <p className="menu-item">
-              Name?
-            </p>
-            <p>
-              Bacon with sharp or mild cheddar, add any herb to this quiche
-            </p>
+            Bacon with sharp or mild cheddar, add any herb to this quiche
           </li>
           <li>
-            <p className="menu-item">
-              Name?
-            </p>
-            <p>
-              Turkey or regular sausage, green peppers, onion, sauteed in basil and avocado oil. Cheese options that are best: white sharp, marinated mozzarella
-            </p>
+            Turkey or regular sausage, green peppers, onion, sauteed in basil and avocado oil. Cheese options that are best: white sharp, marinated mozzarella
           </li>
           <li>
-            <p className="menu-item">
-              Name?
-            </p>
-            <p>
-              Baby Bella Mushrooms with sweet onions, sautéed in avocado oil. Add Basil and/or rosemary for a delicious quiche. Cheese options that are best: swiss, marinated mozzarella, white sharp
-            </p>
+            Baby Bella Mushrooms with sweet onions, sautéed in avocado oil. Add Basil and/or rosemary for a delicious quiche. Cheese options that are best: swiss, marinated mozzarella, white sharp
           </li>
           <li>
-            <p className="menu-item">
-              Name?
-            </p>
-            <p>
-              Fresh sausage from local hogs, gruyere cheese, fresh spinach
-            </p>
+            Fresh sausage from local hogs, gruyere cheese, fresh spinach
           </li>
           <li>
-            <p className="menu-item">
-              Name?
-            </p>
-            <p>
-              Black forest ham, swiss or cheddar cheese—a good, hearty quiche
-            </p>
+            Black forest ham, swiss or cheddar cheese—a good, hearty quiche
           </li>
           <li>
-            <p className="menu-item">
-              Name?
-            </p>
-            <p>
-              Kale or spinach with any kind of cheese, sauteed in avocado oil with or without onion
-            </p>
+            Kale or spinach with any kind of cheese, sauteed in avocado oil with or without onion
           </li>
           <li>
-            <p>
-              Other varieties of quiche available**
-            </p>
-          </li>
-        </ul>
-        <ul className="menu-list text-center">
-          <li>
-            <p className="menu-item">
-              Honey Whole Wheat Bread
-            </p>
-            <p>
-              Made with local honey, 100% whole wheat flour, no sugar
-            </p>
-          </li>
-          <li>
-            <p className="menu-item">
-              White Sandwich Bread
-            </p>
-            <p>
-              Made with unbleached flour
-            </p>
-          </li>
-          <li>
-            <p className="menu-item">
-              Pumpkin Bread
-            </p>
-            <p>
-              Made with farm fresh eggs, very moist bread, absolutely delicious--<span className="menu-price">$5/full loaf, $2.50/half loaf</span>.
-            </p>
-          </li>
-          <li>
-            <p className="menu-item">
-              Banana Bread
-            </p>
-            <p>
-              Made with farm fresh eggs, this is yummy--<span className="menu-price">$5/full loaf, $2.50/half loaf</span>
-            </p>
-          </li>
-          <li>
-            <p className="menu-item">
-              Oat Bread
-            </p>
-            <p>
-              Made with whole wheat flour or white, unbleached--<span className="menu-price">$5/full loaf, $2.50/half loaf</span>
-            </p>
+            Other varieties of quiche available**
           </li>
         </ul>
         <h3 className="text-center text-uppercase">Breads</h3>
@@ -197,13 +118,13 @@ const Menu = () => {
           <li>
             <p className="menu-item">Yeast Rolls</p>
             <p>
-              description?--<span className="menu-price">$5/dz</span>
+              Yeast rolls--<span className="menu-price">$5/dz</span>
             </p>
           </li>
           <li>
             <p className="menu-item">Whole Wheat Rolls</p>
             <p>
-              description?--<span className="menu-price">$5/dz</span>
+              Whole wheat rolls--<span className="menu-price">$5/dz</span>
             </p>
           </li>
         </ul>
@@ -216,12 +137,6 @@ const Menu = () => {
             </p>
           </li>
           <li>
-            <p className="menu-item">Whole Wheat Rolls</p>
-            <p>
-              description?--<span className="menu-price">$5/dz</span>
-            </p>
-          </li>
-          <li>
             <p className="menu-item">Amaretto Vanilla Almond Cupcakes</p>
             <p>
               Moist cupcakes with an amaretto center, topped with almond icing and toasted almonds--<span className="menu-price">$20/dz</span>
@@ -230,7 +145,7 @@ const Menu = () => {
           <li>
             <p className="menu-item">Chocolate Peanut Butter Cupcakes</p>
             <p>
-              description?--<span className="menu-price">$18/dz</span>
+              Chocolate peanut butter cupcakes--<span className="menu-price">$18/dz</span>
             </p>
           </li>
           <li>
