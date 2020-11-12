@@ -12,8 +12,11 @@ function App() {
 
   return (
     <React.Fragment>
+      {/*<header>*/}
+      {/*  <NavigationOrig/>*/}
+      {/*</header>*/}
       <header>
-        <Navigation withImage={true}/>
+        <Navigation/>
       </header>
       <main>
         <Switch>
